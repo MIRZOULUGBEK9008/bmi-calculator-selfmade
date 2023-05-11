@@ -126,3 +126,36 @@ img {
 .main-content {
   flex-grow: 1;
 }
+
+
+/* LOGO  */
+.logo {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.site-header__container {
+  display: flex;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+
+.site-header__logo {
+  margin-right: auto;
+}
