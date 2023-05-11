@@ -1,9 +1,19 @@
+/* FONT  */
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Inter', sans-serif;
+}
 /* CUSTOM-PROPS */
 :root {
-  --loader-color: #000;
+  --blue: #345ff6;
+  --loader-color: var(--blue);
+  --gunmental: #253347;
+  --dark-electric-blue: #5e6e85;
+  --borders: #d8e2e7;
+  --pure-white: #fff;
 }
 
-/* FONT-FACE  */
 
 /* LOADER */
 .loader-wrapper {
@@ -60,9 +70,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  background-color: var(--pure-white);
+  color: var(--dark-electric-blue);
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   padding: 0;
@@ -84,7 +94,7 @@ img {
 
 /* FOCUS-STYLES  */
 *:focus {
-  outline: 3px dashed black;
+  outline: 3px dashed var(--blue);
   outline-offset: 3px;
 }
 
@@ -92,8 +102,8 @@ img {
 .container {
   max-width: 1200px;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
