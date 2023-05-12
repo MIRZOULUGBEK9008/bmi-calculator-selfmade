@@ -354,6 +354,9 @@ input[type=number] {
   font-size: 14px;
 }
 
+
+
+/* SECTION-BMI  */
 .section-bmi__container {
   position: relative;
   display: flex;
@@ -414,4 +417,68 @@ input[type=number] {
   height: 533px;
   object-fit: contain;
   object-position: center;
+}
+
+
+/* SECTION-ADVICE */
+.section-advice-wrapper {
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+
+.section-advice {
+  position: relative;
+}
+
+.section-advice__container::before {
+  content: "";
+  position: absolute;
+  right: 35px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 25%);
+  border-radius: 35px;
+}
+
+.section-advice__container {
+  padding-top: 65px;
+  padding-bottom: 105px;
+}
+
+.section-advice__list {
+  display: flex;
+  margin: 0 0 -50px -32px;
+  padding: 0;
+  list-style: none;
+}
+
+.advice-list__card {
+  margin-left: 32px;
+  margin-bottom: 50px;
+}
+
+.advice-card__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.advice-card__title {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.advice-card__text {
+  margin: 0;
+}
+
+.advice-card__img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  object-position: center;
+  order: -1;
+  margin-bottom: 45px;
 }
