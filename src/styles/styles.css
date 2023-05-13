@@ -186,6 +186,7 @@ input[type=number] {
   line-height: 1.1;
   letter-spacing: -0.05em;
   font-weight: 600;
+  font-size: 48px;
 }
 
 
@@ -368,7 +369,7 @@ input[type=number] {
 
 .section-bmi__content {
   width: 100%;
-  max-width: 465px;
+  max-width: 480px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -387,6 +388,7 @@ input[type=number] {
 }
 
 .section-bmi__title {
+  font-size: 48px;
   margin-bottom: 35px;
 }
 
@@ -481,4 +483,127 @@ input[type=number] {
   object-position: center;
   order: -1;
   margin-bottom: 45px;
+}
+
+
+
+/* SECTION-LIMIT  */
+.section-limit__container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 55px;
+  padding-bottom: 120px;
+}
+
+
+.section-limit__content {
+  width: 100%;
+  max-width: 564px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 30px;
+}
+
+.section-limit__content::after {
+  content: "";
+  width: 100px;
+  height: 125px;
+  background-image: url(../img/line-small.svg);
+  background-repeat: no-repeat;
+  margin-top: 67px;
+  margin-left: 165px;
+}
+
+.section-limit__title {
+  margin-bottom: 35px;
+}
+
+.section-limit__description {
+  margin: 0;
+}
+
+.section-limit__grid {
+  position: absolute;
+  right: 0;
+  display: grid;
+  grid-template-areas:
+  ". . . a a ."
+  ". . b b c c"
+  ". d d e e .";
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 32px;
+
+}
+
+.index-grid__card {
+  width: 365px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}
+
+.grid-card__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.grid-card__title::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.grid-card__description {
+  margin: 0;
+}
+
+.index-grid__card--gender .grid-card__title::before {
+  background-image: url(../img/gender-min.svg);
+}
+
+.index-grid__card--age .grid-card__title::before {
+  background-image: url(../img/cake-min.svg);
+}
+
+.index-grid__card--muscle .grid-card__title::before {
+  background-image: url(../img/muscle-min.svg);
+}
+
+.index-grid__card--pregnancy .grid-card__title::before {
+  background-image: url(../img/baby-min.svg);
+}
+
+.index-grid__card--race .grid-card__title::before {
+  background-image: url(../img/person-min.svg);
+}
+
+.index-grid__card--gender {
+  grid-area: a;
+  transform: translateX(88px);
+}
+
+.index-grid__card--age {
+  grid-area: b;
+}
+
+.index-grid__card--muscle {
+  grid-area: c;
+}
+
+.index-grid__card--pregnancy {
+  grid-area: d;
+}
+
+.index-grid__card--race {
+  grid-area: e;
 }
