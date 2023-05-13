@@ -494,7 +494,6 @@ input[type=number] {
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 55px;
-  padding-bottom: 120px;
 }
 
 
@@ -534,10 +533,9 @@ input[type=number] {
   ". . b b c c"
   ". d d e e .";
   margin: 0;
-  padding: 0;
   list-style: none;
   gap: 32px;
-
+  padding-bottom: 120px;
 }
 
 .index-grid__card {
